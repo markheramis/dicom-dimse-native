@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/root/app
+    ports:
+      - "9999:9999"
+      - "5678:5678"
+      - "10000:10000"
