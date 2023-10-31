@@ -205,8 +205,6 @@ Value DoMove(const CallbackInfo &info)
  */
 Value DoStore(const CallbackInfo &info)
 {
-    // Notify the user that the Storage Service Class Provider is starting.
-    std::cout << "Starting Storage Service Class Provider...\n";
     // Extract the first argument as a string named `input`. This could potentially be
     // some configuration or message related to the STORE operation.
     std::string input = info[0].As<String>().Utf8Value();
